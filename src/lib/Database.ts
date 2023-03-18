@@ -1,8 +1,8 @@
-import PocketBase from 'PocketBase';
+import PocketBase from 'pocketbase';
 
-import { writable} from "svelte/store";
+import { writable } from "svelte/store";
 
-export const pb = new PocketBase("https://bmason.me:80");
+export const pb = new PocketBase("https://bmason.me");
 
 export const currentUser = writable(pb.authStore.model);
 
